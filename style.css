@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    min-height: 100vh;
+}
+
+.x{
+    position: relative;
+    height: 16em;
+}
+
+.x::before{
+    content: '';
+    position: absolute;
+    width: 2em;
+    height: 16em;
+    border: 1.6em solid white;
+    background-color: black;
+    transform: skewX(40deg) translateX(-1.2em);
+    z-index: 10;
+}
+
+.x::after{
+    content: '';
+    position: absolute;
+    width: 1.5em;
+    height: 18.6em;
+    background-color: white;
+    transform: skewX(-38deg);
+}
+
+img[alt="www.000webhost.com"]{
+    display: none !important;
+}
